@@ -4,19 +4,23 @@ namespace csharpLearning.OOP.Constructor
 {
     public class ParameterizedConstructor
     {
-        public int i;
-        public ParameterizedConstructor(int x)
+        int id;
+        string name;
+
+        public ParameterizedConstructor(int id, string  name)
         {
-            i = x;
+            this.id = id;
+            this.name = name;
         }
 
         public void myFunction()
         {
-            Console.WriteLine($"The Value of  is: {i}");
+            Console.WriteLine($"The Value of Id: {id} and the value of name{name}");
         }
+
         public static void Main()
         {
-            ParameterizedConstructor obj = new ParameterizedConstructor(100);
+            ParameterizedConstructor obj = new ParameterizedConstructor(3, "Vishal");
             obj.myFunction();
         }
     }

@@ -4,12 +4,31 @@ namespace csharpLearning.OOP.Constructor
 {
     public class StaticConstructor
     {
+        static string collegeName;
+        
+        //static Constructor
         static StaticConstructor()
         {
-            Console.WriteLine("I am static Constructor: ");
+            collegeName = "Shivalik College Of Engineering";
+            Console.WriteLine("static constructor called");
+        }
+
+        //Normal(Non static Constructor)
+
+        public StaticConstructor()
+        {
+            Console.WriteLine("Normal Constructor called");
+        }
+
+        public void display()
+        {
+            Console.WriteLine(collegeName);
         }
         public static void Main() {
-            Console.WriteLine("Main Method Called:");
+            StaticConstructor obj = new StaticConstructor();
+            StaticConstructor obj1 = new StaticConstructor();
+            obj.display();
+            obj1.display();
         }
     }
 }
