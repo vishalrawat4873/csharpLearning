@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>csharpLearning.AccessModifiers.Program</StartupObject>
+    <StartupObject>csharpLearning.OOP.Polymosrphism.MethodOverloadingExample</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

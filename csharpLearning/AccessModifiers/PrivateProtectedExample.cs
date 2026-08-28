@@ -16,7 +16,6 @@ namespace csharpLearning.AccessModifiers
     {
         public void Display()
         {
-            Console.WriteLine(name);  
         }
     }
 }
